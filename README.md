@@ -140,6 +140,8 @@ helm install lemonade-stand-assistant ./chart --namespace ${PROJECT} \
   --set model.api_key=YOUR_API_KEY
 ```
 
+> **Note**: The `model.endpoint` should be the hostname only, without `https://` prefix or trailing `/`.
+
 **Option B: Deploy with the default model**
 
 If you don't provide any model configuration, the chart will automatically deploy a Llama 3.2 3B Instruct model on your cluster:
